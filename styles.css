@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', 'Big Shoulders Display';
+}
+header{
+  background: #0d0d0d;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+header h4{
+  color: #d21f3c;
+  padding-top: 13px;
+}
+.flex-main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.sedan-div{
+  background:  hsl(31, 77%, 52%);
+  height: 400px;
+  flex: 1;
+  padding: 30px;
+}
+.suv-div{
+  background: hsl(184, 100%, 22%);
+  height: 400px;
+  flex: 1;
+  padding: 30px;
+}
+.luxury-div{
+  background: hsl(179, 100%, 13%);
+  height: 400px;
+  flex: 1;
+  padding: 30px;
+}
+h2{
+  color: hsl(0, 0%, 95%);
+  margin-top: 30px;
+  font: 'Big Shoulders Display';
+  font-weight: 700;
+}
+p{
+color: hsla(0, 0%, 100%, 0.75);
+font-size: 15px;
+margin-top: 20px;
+letter-spacing: 1.5;
+}
+button{
+  margin-top: 70px;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+}
+.sedan-btn{
+  color: hsl(31, 77%, 52%);
+}
+.suv-btn{
+  color: hsl(184, 100%, 22%);
+}
+.luxury-btn{
+  color: hsl(179, 100%, 13%);
+}
+button:hover{
+  background: inherit;
+  color: hsl(0, 0%, 95%);
+  outline: 2px solid hsl(0, 0%, 95%);
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+ /* for the grid!  */
+ .item1{
+   background: #ff2400;
+   grid-area: header;
+   height: 200px;
+   grid-column: 1 / span 2.5;
+ }
+ .item2{
+   background: orange;
+   grid-area: aside;
+   /* grid-column: 3; */
+ }
+ .item3{
+   background: blue;
+   grid-area: newSide;
+  grid-row: 2 / span 2;
+
+ }
+ .item4{
+   background: grey;
+   grid-area: newThins;
+   grid-column: 3 / span 2;
+   grid-row: 2;
+   height: 100px;
+ }
+ .item5{
+   background: green;
+   grid-area: newThing;
+   grid-column: 3 / span 2;
+   grid-row: 3;
+   height: 100px;
+
+
+ }
+ .grid-container{
+   margin-top: 50px;
+   display: grid;
+   gap: 10px;
+   background-color: #0d0d0d;
+   padding: 10px;
+   grid-template-areas:
+   'header header header aside '
+   'newSide newSide newThins newThing';
+ }
+ .grid-item{
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+ }
